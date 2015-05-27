@@ -110,16 +110,16 @@
 
 	<div id="maincontent" style="overflow-y: scroll;">
 		<div align="center"> 
-        <small>Instance hosted at &nbsp;<%=request.getLocalAddr() %>:<%=request.getLocalPort() %></small><br>
+        <p>Instance hosted at &nbsp;<%=request.getLocalAddr() %>:<%=request.getLocalPort() %></p><br>
         <c:if test="${vcap_app != null && !empty vcap_app}">
-        	<small>Instance Index &nbsp;<em>${vcap_app['instance_index']}</em></small><br>
+        	<p>Instance Index &nbsp;<em>${vcap_app['instance_index']}</em></p><br>
         </c:if>
 		<c:choose>
 			<c:when test="${rabbitURI != null}">
-				<small>Data being streamed from RabbitMQ</small>				
+				<p>Data being streamed from RabbitMQ</p>				
 			</c:when>
 			<c:otherwise>
-				<small><b>No RabbitMQ service bound - streaming is not active</b> </small>	
+				<p><b>No RabbitMQ service bound - streaming is not active</b> </p>	
 			</c:otherwise>
 		</c:choose>
 		<br>
