@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>PivotalOne Demo</title>
+<title>Pivotal Maps</title>
 <meta http-equiv="Cache-Control"
 	content="no-store, no-cache, must-revalidate, max-age=0">
 <link href="resources/css/retail.css" rel="stylesheet">
@@ -103,7 +103,7 @@
 	        	<input type="button" value="Orders US Heat Map" class="activate nav-link" >
 	        	<input type="button" value="Start Data Stream" class="activate nav-link" onclick="startStream();">
 	        	<input type="button" value="Kill App" class="activate nav-link" onclick="killApp();">
-	        	<input type="button" value="Awesome Button" class="activate nav-link" onclick="killApp();">
+	        	<!-- <input type="button" value="Awesome Button" class="activate nav-link" onclick="killApp();"> -->
 	       </div>
 	    </div>
 	</div>
